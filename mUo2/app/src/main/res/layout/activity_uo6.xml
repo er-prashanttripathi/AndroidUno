@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Uo6"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txttamt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Total Amount :"
+            android:textColor="#11A374"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="40dp" />
+
+        <TextView
+            android:id="@+id/txtamtrec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="right"
+            android:text="5000"
+            android:textColor="#11A374"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="304dp"
+            tools:layout_editor_absoluteY="40dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtbname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="30dp"
+        android:text="Gulshan_Cafe_and_Restaurants"
+        android:textColor="#11A374"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/txtbname"
+        app:layout_constraintStart_toStartOf="@+id/txtbname"
+        app:layout_constraintTop_toBottomOf="@+id/txtbname">
+
+        <Button
+            android:id="@+id/btnlink"
+            android:layout_width="153dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="#3766EF"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Link"
+            app:layout_constraintEnd_toStartOf="@+id/btncall"
+            tools:layout_editor_absoluteY="175dp" />
+
+        <Button
+            android:id="@+id/btncall"
+            android:layout_width="153dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="#11A374"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Call"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="260dp"
+            tools:layout_editor_absoluteY="175dp" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtstat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="32dp"
+        android:text="Delivery Status"
+        android:textColor="#11A374"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/txtstat"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/txtstat"
+        app:layout_constraintTop_toBottomOf="@+id/txtstat">
+
+        <Button
+            android:id="@+id/btndel"
+            android:layout_width="153dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#658178"
+            android:text="Delivered"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="287dp" />
+
+        <Button
+            android:id="@+id/btnndel"
+            android:layout_width="153dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#658178"
+            android:text="Not-Delivered"
+            tools:layout_editor_absoluteX="260dp"
+            tools:layout_editor_absoluteY="287dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtresn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Reason : -"
+        android:textAlignment="center"
+        android:textColor="#11A374"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"/>
+
+    <EditText
+        android:id="@+id/emtxtresn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="30dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Mention Reason"
+        android:inputType="textMultiLine"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/txtresn"
+        app:layout_constraintStart_toStartOf="@+id/txtresn"
+        app:layout_constraintTop_toBottomOf="@+id/txtresn" />
+
+    <Button
+        android:id="@+id/btnsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="#11A374"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/emtxtresn"
+        app:layout_constraintStart_toStartOf="@+id/emtxtresn"
+        app:layout_constraintTop_toBottomOf="@+id/etxtamtrec"
+        app:layout_constraintVertical_bias="0.701" />
+
+    <Button
+        android:id="@+id/btnpaycon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#11A374"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Confirm Payment"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etxtamtrec"
+        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintStart_toStartOf="@+id/etxtamtrec"
+        app:layout_constraintTop_toBottomOf="@+id/etxtamtrec"
+        app:layout_constraintVertical_bias="0.497" />
+
+    <EditText
+        android:id="@+id/etxtamtrec"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="56dp"
+        android:hint="Enter Amount Received"
+        android:textAlignment="center"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/llradio"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="@+id/llradio"
+        app:layout_constraintTop_toBottomOf="@+id/llradio" />
+
+    <TextView
+        android:id="@+id/txtamtcol"
+        android:layout_width="258dp"
+        android:layout_height="47dp"
+        android:layout_margin="20dp"
+        android:text="Amount Collected via:"
+        android:textAlignment="center"
+        android:textColor="#11A374"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <LinearLayout
+        android:id="@+id/llradio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/txtamtcol"
+        app:layout_constraintStart_toStartOf="@+id/txtamtcol"
+        app:layout_constraintTop_toBottomOf="@+id/txtamtcol"
+>
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <RadioButton
+                android:id="@+id/rcash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Cash"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="449dp"
+                android:visibility="gone"/>
+
+            <RadioButton
+                android:id="@+id/rcheque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Cheque"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:layout_editor_absoluteX="139dp"
+                tools:layout_editor_absoluteY="448dp" />
+
+            <RadioButton
+                android:id="@+id/rother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Other"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="267dp"
+                tools:layout_editor_absoluteY="448dp"
+                android:visibility="gone"/>
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etxtchq"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Amount mentioned"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="56dp"
+        android:textAlignment="center"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/llradio"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="@+id/llradio"
+        app:layout_constraintTop_toBottomOf="@+id/llradio" />
+
+    <Button
+        android:id="@+id/btnchq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#11A374"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:text="Cheque Received"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etxtamtrec"
+        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintStart_toStartOf="@+id/etxtamtrec"
+        app:layout_constraintTop_toBottomOf="@+id/etxtamtrec"
+        app:layout_constraintVertical_bias="0.497" />
+
+    <EditText
+        android:id="@+id/etxtother"
+        android:ems="10"
+        android:hint="Describe"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="56dp"
+        android:textAlignment="center"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/llradio"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="@+id/llradio"
+        app:layout_constraintTop_toBottomOf="@+id/llradio" />
+
+    <Button
+        android:id="@+id/btnother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#11A374"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etxtother"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/etxtother"
+        app:layout_constraintTop_toBottomOf="@+id/etxtother" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
